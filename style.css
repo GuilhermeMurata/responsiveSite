@@ -39,7 +39,6 @@ header nav li a {
 }
 
 section {
-    display: flex;
     align-items: center;
 }
 
@@ -53,6 +52,7 @@ section {
     font-family: 'Roboto', sans-serif;
     color: #321987;
     text-decoration: none;
+    display: flex;
 }
 
 .destaque img {
