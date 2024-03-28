@@ -2,20 +2,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
-    background-color: #321987;
-}
-
-.container h1 {
-    font-family: 'Nabla', sans-serif;
+html {
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 1024px;
     width: 100%;
     margin: 0 auto;
+}
+
+.container h1 {
+    font-family: 'Nabla', sans-serif;
 }
 
 header .container {
@@ -30,6 +31,7 @@ header nav li {
     margin-left: 16px;
     color: #eee;
     font-size: 16px;
+    font-weight: bold;
 }
 
 header nav li a {
@@ -38,8 +40,40 @@ header nav li a {
     text-decoration: none;
 }
 
-section {
+header, footer {
+    background-color: #321987;
+    width: 100%;
+}
+
+header > .container {
     align-items: center;
+    padding-bottom: 16px;
+    justify-content: space-between;
+}
+
+.container-flex {
+    display: flex;
+}
+
+#Sobre-a-loja img {
+    max-width: 400px;
+    margin-right: 24px;
+}
+
+section {
+    padding: 48px 0;
+}
+
+section h2 {
+    margin-bottom: 16px;
+}
+
+section {
+    padding: 48px 0;
+    align-items: center;
+}
+section h2 {
+    margin-bottom: 16px;
 }
 
 .conteudo {
@@ -65,4 +99,38 @@ section {
     padding: 25px;
     margin-bottom: 5px;
     border-bottom: 2px solid #321987;
+}
+
+.lista-mouses {
+    display: flex;
+}
+
+.lista-mouses li {
+    list-style: none;
+    max-width: 30%;
+    margin-bottom: 24px;
+}
+
+.lista-mouses li img {
+    max-width: 100%;
+    border-radius: 8px;
+    max-height: 300px;
+}
+
+.lista-mouses li h3{
+    margin: 16px 0;
+}
+
+button {
+    display: block;
+    width: 100%; 
+    padding: 8px 0;
+    border: none;
+    background-color: #321987;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    font-style: italic;
+    cursor: pointer;
+    border-radius: 6px;
 }
