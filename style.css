@@ -9,6 +9,13 @@ html {
     overflow-x: hidden;
 }
 
+.principal {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
 .container {
     max-width: 1024px;
     width: 100%;
@@ -82,12 +89,6 @@ section h2 {
     margin-bottom: 16px;
 }
 
-.conteudo {
-    display: grid;
-    grid-template-columns: 70% 30%;
-    width: 1020px;
-}
-
 .sobre {
     font-family: 'Roboto', sans-serif;
     color: #321987;
@@ -127,6 +128,10 @@ section h2 {
     margin: 16px 0;
 }
 
+section {
+    padding: 16px 0;
+}
+
 button {
     display: block;
     width: 230px; 
@@ -140,4 +145,53 @@ button {
     cursor: pointer;
     border-radius: 6px;
     margin-top: 12px;
+}
+
+@media screen and (max-width: 640px) {
+
+    .container .noticia {
+        display: block;
+    }
+
+    .container {
+        max-width: 640px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .destaque img {
+    margin: 25px 25px;
+    height: 300px;
+    width: 300px;
+    }
+
+    .lista-mouses {
+        display: block;
+        width: 950px;
+        margin-left: 35px;
+    }
+
+    .lista-mouses h3{
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 641px) and (max-width: 1023px) {
+    .container {
+        max-width: 1024px;
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    section .noticia {
+        display: flex;
+    }
+
+    .lista-mouses {
+        grid-template-columns: repeat(2, 50%);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
 }
