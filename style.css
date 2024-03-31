@@ -147,14 +147,14 @@ button {
     margin-top: 12px;
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 667px) {
 
     .container .noticia {
         display: block;
     }
 
     .container {
-        max-width: 640px;
+        max-width: 667px;
         width: 80%;
         margin: 0 auto;
     }
@@ -176,19 +176,29 @@ button {
     }
 }
 
-@media screen and (max-width: 641px) and (max-width: 1023px) {
+@media screen and (max-width: 768px) and (max-width: 1024px) {
     .container {
-        max-width: 1024px;
+        max-width: 1023px;
         width: 80%;
-        margin: 0 auto;
     }
 
-    section .noticia {
-        display: flex;
+    .noticia img {
+        width: 100%;
+        margin-left: 90px;
     }
 
     .lista-mouses {
+        margin-left: 50px;
+        display: grid;
         grid-template-columns: repeat(2, 50%);
+    }
+
+    .lista-mouses h3 {
+        width: 1000px;
+    }
+
+    .lista-mouses p {
+        width: 200px;
     }
 }
 
